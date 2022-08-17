@@ -1,1 +1,237 @@
+/*contact us*/
 
+.contact_container {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 100px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_container .heading {
+  width: 60%;
+  padding-bottom: 30px;
+}
+
+.contact_container .heading h4 {
+  font-size: 40px;
+  font-weight: bolder;
+  border-bottom: 4px solid cyan;
+}
+
+.contact_container .heading h4 span {
+  font-weight: 100;
+}
+
+
+.contact-body {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.contact-info {
+  margin: 32px 0;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.contact-info span {
+  display: block;
+}
+
+.contact-info div {
+  margin: 12px 0;
+  padding: 14px;
+  border-left: 1px solid #0000ff;
+  border-right: 1px solid #0000ff;
+}
+
+.contact-info span .fa-solid {
+  font-size: 30px;
+  padding-bottom: 14px;
+  color: #000080;
+}
+
+.contact-info div span:nth-child(2) {
+  font-weight: 500;
+  font-size: 0px;
+}
+
+.contact-info .text {
+  padding-top: 10px;
+}
+
+.contact-form {
+  padding: 20px 0;
+  border-top: 4px solid #747474;
+}
+
+.contact-form form {
+  padding-bottom: 16px;
+}
+
+.contact-form form h4 {
+  font-size: 26px;
+  color: #ff9933;
+  text-shadow: #000080;
+  padding-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 10px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  outline: 0;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 6px -4px rgba(48, 48, 48, 1);
+}
+
+.contact-form form div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+
+.contact-form>div img {
+  width: 85%;
+}
+
+.btn-87,
+.btn-87 *,
+.btn-87 :after,
+.btn-87 :before,
+.btn-87:after,
+.btn-87:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-87 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000080;
+  background-image: none;
+  color: #138808;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000080, #fff);
+  padding: 0;
+}
+
+.btn-87:disabled {
+  cursor: default;
+}
+
+.btn-87:-moz-focusring {
+  outline: auto;
+}
+
+.btn-87 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-87 [hidden] {
+  display: none;
+}
+
+.btn-87 {
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 900;
+  height: 110px;
+  position: relative;
+  text-transform: uppercase;
+  width: 110px;
+}
+
+.btn-87 span {
+  mix-blend-mode: difference;
+}
+
+.btn-87:before {
+  background: #ff9933;
+  border-radius: 50%;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.4s linear;
+  z-index: -1;
+}
+
+.btn-87:hover:before {
+  opacity: 1;
+  transition: opacity 0.5s linear 1s;
+}
+
+.btn-87 svg {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 4px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  height: 105%;
+  left: -5px;
+  pointer-events: none;
+  position: absolute;
+  top: -5px;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+  width: 105%;
+}
+
+.btn-87 circle {
+  cx: 52%;
+  cy: 52%;
+  r: 45%;
+}
+
+.btn-87:hover svg {
+  stroke-dashoffset: 120;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.contact-form>div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-info {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
