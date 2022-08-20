@@ -1,1 +1,26 @@
+.programmes_container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
 
+.leftimg {
+    width: 15%;
+    height: 100%;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.rightdet {
+    width: 75%;
+    height: 100%;
+    text-align:left;
+    margin: 20px 60px;
+}
+
+.aim{
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #138808;
+}
