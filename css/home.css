@@ -1,0 +1,233 @@
+.navbar-brand {
+    padding-left: 10px;
+}
+
+
+.carousel{
+    height: 80vh;
+    width: 95%;
+    padding: 1px;
+    margin-left: 2.5%;
+}
+
+.carousel-inner {
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item img {
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    padding: 0 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+.para {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    text-align: center;
+    text-size-adjust: 20px;
+    text-decoration-style: wavy;
+}
+
+.pro {
+    width: 100%;
+    margin-top: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro img {
+    object-fit: cover;
+}
+
+.det {
+    margin: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transition: all .3s ease;
+    border-bottom: 5px #000080 solid;
+    border-left: #000080 solid 3px;
+    border-right: #000080 solid 3px;
+}
+
+.det:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    background-color:#ff9933;
+}
+
+.pro .det p {
+    font-size: medium;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #232323;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_page {
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transition: all .3s ease;
+    border-bottom: 5px #000080 solid;
+}
+
+.contact_page .form-group {
+    margin-bottom: 20px;
+}
+
+.contact_page .form-control {
+    border-radius: 0px;
+    border: 1px solid #000080;
+}
+
+.contact_page .form-group input {
+    border: 1px solid #000080;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact_page .form-group textarea {
+    border: 1px solid #000080;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact_page .form-group button {
+    border: 1px solid #000080;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background: #000080;
+    color: #fff;
+    font-weight: 400;
+}
+
+.contact_page .form-group button:hover {
+    background: #fff;
+    color: #000080;
+    font-weight: 600;
+}
+
+.contact_page .form-group button:active {
+    background: #000080;
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact_page .form-group button:focus {
+    background: #000080;
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact_page .form-group button:visited {
+    background: #000080;
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact_page .form-group button:link {
+    background: #000080;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cp1 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transition: all .3s ease;
+    border-bottom: 5px #000080 solid;
+}
+
+.cp2 {
+    padding: 20px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width: 978px) {
+    .cp2 {
+        padding: 0px;
+    }
+
+    .cp1 {
+        padding: 0px;
+    }
+
+    .contact_page {
+        padding: 0px;
+    }
+
+    .pro {
+        flex-direction: column;
+    }
+
+    .det {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .det p {
+        font-size: small;
+    }
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .carousel-inner {
+        height: 50vh;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .para {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
