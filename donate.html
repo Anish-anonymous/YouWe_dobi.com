@@ -114,10 +114,10 @@
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse navbar_style" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="about.html">About Us</a>
@@ -135,7 +135,8 @@
                         <a class="nav-link text-white" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="donate.html">Donate (•_•)</a>
+                        <a class="nav-link text-white active" href="donate.html">Donate (•_•) <span
+                                class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -144,12 +145,15 @@
     <!--end of navbar-->
     <!--heading-->
     <div class="pt-3">
-        <h1 class="display-1 text-center text-black" style="font-weight:bolder;font-family: 'Tangerine', serif;">
+        <h1 class="display-1 text-center text-black text-decoration-underline"
+            style="font-weight:bolder;font-family: 'Tangerine', serif;">
             Donate for the cause...</h1>
     </div>
+    <!--end of heading-->
     <!--donate-->
     <div class="container">
-        <div class="row shadow p-5 m-3">
+        <div class="row shadow p-5 m-3"
+            style="background-image: linear-gradient(to bottom, #ff9933, #ff9c7c, #ffadb9, #ffc7e7, #ffe2fe, #ebe1ff, #d5e0ff, #bfdffc, #68ceea, #00bcbc, #00a572, #138808); border-radius: 20px;">
             <div class="col-md-5 m-xxl-5">
                 <h2>Donate on PAYTM</h2>
                 <p>Here are my UPI details <br>
@@ -179,11 +183,23 @@
                     <img src="res/bank-transfer.png" alt="bank-transfer" width="150" height="150">
                 </div>
             </div>
+            <!--volunteer-->
+            <div class="px-4 py-5 text-center" style="border-top: 1px solid #000080;">
+                <i class="fa-solid fa-users-rectangle fa-3x"></i>
+                <h1 class="display-5 fw-bold">OR HELP US WITH YOUR SKILLS</h1>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-dark btn-lg px-4 gap-3"><i class="fas fa-handshake"></i>Join Us
+                        , Became
+                        a
+                        volunteer</button>
+                </div>
+            </div>
+            <!--end of volunteer-->
         </div>
     </div>
     <!--donate.end-->
     <!--footer-->
-    <footer class="text-center text-lg" style="background-color: #ECEFF1">
+    <footer class="text-center text-lg" style="background-color: #ffffff">
         <section class="d-flex justify-content-between p-4 text-white" style="background-color: #138808">
             <div class="me-5">
                 <span>Connect with us on social media networks:</span>
@@ -199,7 +215,7 @@
             </div>
         </section>
 
-        <section class="">
+        <section class="footer_design text-decoration-none">
             <div class="container text-center text-md-start mt-5">
                 <div class="row mt-5">
 
@@ -222,16 +238,16 @@
                         <hr class="mb-2 mt-0 d-inline-block mx-auto"
                             style="width: 100px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            <a href="#!" class="text-dark">MDBootstrap</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">MDBootstrap</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-dark">MDWordPress</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">MDWordPress</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-dark">BrandFlow</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">BrandFlow</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-dark">Bootstrap Angular</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">Bootstrap Angular</a>
                         </p>
                     </div>
 
@@ -240,16 +256,16 @@
                         <hr class="mb-2 mt-0 d-inline-block mx-auto"
                             style="width: 110px; background-color: #7c4dff; height: 2px" />
                         <p>
-                            <a href="#!" class="text-dark">Your Account</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">Your Account</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-dark">Become an Affiliate</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">Become an Affiliate</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-dark">Shipping Rates</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">Shipping Rates</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-dark">Help</a>
+                            <a href="#!" class="text-white" style="text-decoration:none;">Help</a>
                         </p>
                     </div>
 
@@ -262,16 +278,16 @@
                                     src="https://maps.google.com/maps?width=500&amp;height=150&amp;hl=en&amp;q=25.589740, 85.162382&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                     frameborder="0"></iframe>
                                 <h6>Address:<br>
-                                    Sanjay Gandhi Nagar, Kankarbagh, Bankman Colony, Patna, Bihar 800026, India
+                                    Sanjay Gandhi Nagar, Kankarbagh, Bankman Colony, Patna, Bihar 800026, India <br>
                                 </h6>
                             </a>
                         </p>
                         <p><i class="fas fa-envelope mr-3"></i>
                             <a href="mailto:youwedreamersofbetterindia@gmail.com " style="text-decoration:none;"
-                                class="text-dark">youwedreamersofbetterindia@gmail.com</a>
+                                class="text-white">youwedreamersofbetterindia@gmail.com</a>
                         </p>
                         <p><i class="fas fa-phone mr-3"></i>
-                            <a href=" tel:+91 9955116694" class="text-dark" style="text-decoration:none;">+91
+                            <a href=" tel:+91 9955116694" class="text-white" style="text-decoration:none;">+91
                                 9955116694</a>
                         </p>
                     </div>
@@ -279,9 +295,10 @@
             </div>
         </section>
         <!-- Copyright -->
-        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="text-center p-2 text-white" style="background-color: rgba(0, 0, 0, 0.650)">
             © 2022 Copyright:
-            <a class="text-dark" href="https://www.youwedreamersofbetterindia.com/">YouWe-Dreamers of Better India</a>
+            <a class="text-white" href="https://www.youwedreamersofbetterindia.com/">YouWe-Dreamers of Better India</a>
+            <a href="" class=" text-decoration-none text-white">Designed by YouWe IT Team.</a>
         </div>
         <!-- Copyright -->
     </footer>
