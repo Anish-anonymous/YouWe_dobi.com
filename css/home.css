@@ -2,8 +2,49 @@
     padding-left: 10px;
 }
 
+.navbar_style {
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
 
-.carousel{
+.navbar_style a {
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar_style a:hover {
+    color: #000080;
+    background-color: #138808;
+    border-radius: 25px;
+    transition: all 1s ease 0s;
+}
+
+.navbar_style a:active {
+    color: #000080;
+    background-color: #138808;
+    border-radius: 25px;
+    transition: all 1s ease 0s;
+}
+
+.navbar_style a .active:active {
+    color: #000080;
+    background-color: #138808;
+    border-radius: 25px;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 1s ease 0s;
+}
+
+.carousel {
     height: 80vh;
     width: 95%;
     padding: 1px;
@@ -25,6 +66,7 @@
     width: 100%;
     background-size: cover;
     padding: 0 0;
+    height: 80vh;
 }
 
 .carousel-caption {
@@ -47,6 +89,40 @@
     right: 0;
     left: 0;
     opacity: 0.1;
+}
+
+#work {
+    background-color: #fff;
+}
+
+.footer_design {
+    background-color: #262626;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.footer_design a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_design a:hover {
+    color: #000080;
+    background-color: #138808;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    padding-left: 3px;
+}
+
+.footer_design a:active {
+    color: #000080;
+    background-color: #138808;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    padding-left: 3px;
 }
 
 .para {
@@ -87,7 +163,7 @@
 .det:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
-    background-color:#ff9933;
+    background-color: #f1f1f1;
 }
 
 .pro .det p {
@@ -100,11 +176,12 @@
 }
 
 .contact_page {
-    padding: 20px;
-    border-radius: 0px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
     transition: all .3s ease;
-    border-bottom: 5px #000080 solid;
 }
 
 .contact_page .form-group {
@@ -172,6 +249,7 @@
 
 .cp1 {
     padding: 20px;
+    padding-top: 0;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
     transition: all .3s ease;
@@ -184,7 +262,45 @@
     transition: all .3s ease;
 }
 
+.container_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.container_gallery .row {
+    margin: 5px;
+    margin-bottom: 0;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transition: all .3s ease;
+}
+
+.container_gallery .row img {
+    padding: 5px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .5s ease;
+}
+
+.container_gallery .row img:hover {
+    transform: scale(1.1);
+}
+
+.container_gallery .row img:active {
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 978px) {
+    .container_gallery .row {
+        width: 100%;
+    }
+
     .cp2 {
         padding: 0px;
     }
@@ -229,5 +345,19 @@
     .para {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    .container_gallery .row {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container_gallery {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container_gallery .row img {
+        padding: 0px;
     }
 }
