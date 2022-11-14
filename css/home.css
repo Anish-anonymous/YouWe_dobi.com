@@ -253,9 +253,6 @@
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
     transition: all .3s ease;
-    border-bottom: 5px #000080 solid;
-    border-left: #000080 solid 3px;
-    border-right: #000080 solid 3px;
 }
 
 .det:hover {
