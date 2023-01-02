@@ -1,0 +1,88 @@
+/*first content*/
+
+.first-section {
+    background-color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.first-content{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 12px 12px 8px(0, 0, 0, 0, 0.3);
+}
+
+.first-pic{
+    width: 50%;
+    float: left;
+    padding: 60px;
+    box-shadow: 12px 12px 8px(0, 0, 0, 0, 0.3);
+}
+
+.first-pic img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.first-text{
+    width: 50%;
+    float: right;
+    background-color: bisque;
+    padding: 60px;
+    box-shadow: 12px 12px 8px(0, 0, 0, 0, 0.3);
+}
+
+.first-text h1{
+    font-size: 7vmin;
+}
+
+.first-text p{
+    font-size: 2.5vmin;
+}
+
+/*second content*/
+.second-section {
+    background-color: url(photo_2022-09-11_18-39-25.jpg) no-repeat right;
+    padding: 50px 0;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.second-content{
+    width: 100%;
+    background-color: gray;
+    padding: 80px;
+    box-shadow: 12px 12px 8px(0, 0, 0, 0, 0.3);
+}
+
+/*third content*/
+.third-section {
+    background-color: #fff;
+    padding: 50px 0;
+    overflow: hidden;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.third-content{
+    width: 100%;
+    background-color: #fff;
+    padding: 80px;
+    box-shadow: 12px 12px 8px(0, 0, 0, 0, 0.3);
+}
