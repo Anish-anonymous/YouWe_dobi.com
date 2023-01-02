@@ -226,7 +226,7 @@
                                     hearing from you.</p>
                             </div>
                             <div class="row p-4">
-                                <form action="send.php" method="post">
+                                <form action="form-handler.php" method="post">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="name">Name</label>
@@ -256,7 +256,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                        <button input type="submit" value="Submit" class="btn btn-primary">Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -268,15 +268,25 @@
     </section>
     <!--end of contact-details-->
 
-    <?php
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $phone = $_POST['phone'];
-      $message = $_POST['message'];
-      $to = "anishkr233@gmail.com";
-      $subject = "New form submission";
-      $body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message";
-      mail($to, $subject, $body);
+<?php
+
+// Check if the form was submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  // Get the form data
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
+
+  // Validate the form data (optional)
+
+  // Send the email
+  $to = 'anishkr233@gmail.com';
+  $subject = 'New message from contact form';
+  $body = "From: $name\n\nE-Mail: $email\n\nPhone: $phone\n\nMessage:\n$message";
+  mail($to, $subject, $body);
+}
+
 ?>
 
     <!--footer-->
